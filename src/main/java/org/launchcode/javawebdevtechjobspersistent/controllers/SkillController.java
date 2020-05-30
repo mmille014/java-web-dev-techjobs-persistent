@@ -1,18 +1,3 @@
-//package org.launchcode.javawebdevtechjobspersistent.controllers;
-//
-//import org.launchcode.javawebdevtechjobspersistent.models.data.SkillRepository;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.stereotype.Controller;
-//import org.springframework.web.bind.annotation.RequestMapping;
-//
-//@Controller
-//@RequestMapping("skills")
-//public class SkillController {
-//    @Autowired
-//    private SkillRepository skillRepository;
-
-//}
-
 package org.launchcode.javawebdevtechjobspersistent
 .controllers;
 
@@ -60,7 +45,7 @@ public class SkillController {
         }
 
         skillRepository.save(newSkill);
-        return "redirect:";
+        return "redirect:../";
     }
 
     @GetMapping("view/{skillId}")

@@ -2,7 +2,7 @@
 Columns and their data types:
 Table: job
 Columns:
-id int PK
+id int
 employer varchar(255)
 name varchar(255)
 skills varchar(255)
@@ -15,7 +15,12 @@ WHERE (location = St. Louis City);
 
 
 ## Part 3: Test it with SQL
-DROP TABLE job;
+DROP TABLE jobs;
 
 
 ## Part 4: Test it with SQL
+SELECT name, description
+FROM skill
+INNER JOIN job_skills ON skill.id = job_skills.skills_id
+WHERE jobs_id IS NOT NULL
+ORDER BY name ASC;
