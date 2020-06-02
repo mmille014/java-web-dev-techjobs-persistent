@@ -1,17 +1,17 @@
 ## Part 1: Test it with SQL
-Columns and their data types:
-Table: job
-Columns:
-id int
-employer varchar(255)
-name varchar(255)
-skills varchar(255)
+--Columns and their data types:
+--Table: job
+--Columns:
+--id int
+--employer varchar(255)
+--name varchar(255)
+--skills varchar(255)
 
 
 ## Part 2: Test it with SQL
 SELECT name
 FROM employer
-WHERE (location = St. Louis City);
+WHERE location = "Philadelphia";
 
 
 ## Part 3: Test it with SQL
